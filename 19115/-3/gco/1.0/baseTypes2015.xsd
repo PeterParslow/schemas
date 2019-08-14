@@ -318,36 +318,118 @@ This gcoBase.xsd schema provides:
 	</xs:complexType>
 	<!-- ========================================================================== -->
 	<!-- ========================= Record & RecordType ============================== -->
-	<!--================= Record ==================-->
-	<xs:element name="Record"/>
-	<!-- ........................................................................ -->
-	<xs:complexType name="Record_PropertyType">
-		<xs:sequence minOccurs="0">
-			<xs:element ref="gco:Record"/>
-		</xs:sequence>
-		<xs:attributeGroup ref="gco:ObjectReference"/>
-		<xs:attribute ref="gco:nilReason"/>
-	</xs:complexType>
-	<!-- =========================================================================== -->
-	<!--================= RecordType ==================-->
-	<xs:complexType name="RecordType_Type">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attributeGroup ref="xlink:simpleAttrs"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<!-- ........................................................................ -->
-	<xs:element name="RecordType" type="gco:RecordType_Type"/>
-	<!-- ........................................................................ -->
-	<xs:complexType name="RecordType_PropertyType">
-		<xs:sequence minOccurs="0">
-			<xs:element ref="gco:RecordType"/>
-		</xs:sequence>
-		<xs:attribute ref="gco:nilReason"/>
-	</xs:complexType>
-	<!-- ========================================================================== -->
-	<!-- =========================== Binary basic type ================================ -->
+    <!--================= Record ==================-->
+    <xs:element name="Record" type="gco:Record_Type"/>
+    <!-- ........................................................................ -->
+    <xs:complexType name="Record_Type">
+        <xs:complexContent>
+            <xs:extension base="gco:AbstractObject_Type">
+                <xs:sequence>
+                    <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="gco:RecordType_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>type of record</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="gco:Field_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation></xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ........................................................................ -->
+    <xs:complexType name="Record_PropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="gco:Record"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gco:ObjectReference"/>
+        <xs:attribute ref="gco:nilReason"/>
+    </xs:complexType>
+     <!-- ========================= Field ============================== -->
+    <xs:element name="Field" type="gco:Field_Type"/>
+    <!-- ........................................................................ -->
+    <xs:complexType name="Field_Type">
+        <xs:complexContent>
+            <xs:extension base="gco:AbstractObject_Type">
+                <xs:sequence>
+                    <xs:element name="value" minOccurs="1" maxOccurs="unbounded" type="gco:CharacterString_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>Memebrs of a list of field types of a record</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="type" minOccurs="1" maxOccurs="unbounded" type="gco:FieldType_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>Memebrs of a list of field types of a record</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ........................................................................ -->
+    <xs:complexType name="Field_PropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="gco:Field"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gco:ObjectReference"/>
+        <xs:attribute ref="gco:nilReason"/>
+    </xs:complexType>
+     <!-- ========================= RecordType ============================== -->
+    <xs:element name="RecordType" type="gco:RecordType_Type"/>
+    <!-- ........................................................................ -->
+    <xs:complexType name="RecordType_Type">
+        <xs:complexContent>
+            <xs:extension base="gco:AbstractObject_Type">
+                <xs:sequence>
+                    <xs:element name="fieldType" minOccurs="1" maxOccurs="unbounded" type="gco:FieldType_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>Memebrs of a list of field types of a record</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ........................................................................ -->
+    <xs:complexType name="RecordType_PropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="gco:RecordType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gco:ObjectReference"/>
+        <xs:attribute ref="gco:nilReason"/>
+    </xs:complexType>
+    <!-- ========================= FieldType ============================== -->
+    <xs:element name="FieldType" type="gco:FieldType_Type"/>
+    <!-- ........................................................................ -->
+    <xs:complexType name="FieldType_Type">
+        <xs:complexContent>
+            <xs:extension base="gco:AbstractObject_Type">
+                <xs:sequence>
+                    <xs:element name="fieldName" minOccurs="1" maxOccurs="1" type="gco:CharacterString_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>Name of the field type</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="fieldType" minOccurs="1" maxOccurs="1" type="gco:TypeName_PropertyType">
+                        <xs:annotation>
+                            <xs:documentation>Type of the field value</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ........................................................................ -->
+    <xs:complexType name="FieldType_PropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="gco:FieldType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gco:ObjectReference"/>
+        <xs:attribute ref="gco:nilReason"/>
+    </xs:complexType>
+     <!-- ========================================================================== -->	<!-- =========================== Binary basic type ================================ -->
 	<!--NB: this type is not declared in 19103 but used in 19115. -->
 	<!--================= Type ==================-->
 	<xs:complexType name="Binary_Type">
