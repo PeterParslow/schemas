@@ -10,6 +10,6 @@
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0"
 		schemaLocation="https://schemas.isotc211.org/19115/-3/cit/1.0/cit.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/gco/1.0"
-		schemaLocation="http://standards.iso.org/iso/19115/-3/gco/1.0/gco.xsd"/>
+		schemaLocation="https://schemas.isotc211.org/19115/-3/gco/1.0/gco.xsd"/>
 </xs:schema>
 	
