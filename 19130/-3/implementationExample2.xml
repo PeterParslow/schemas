@@ -21,7 +21,7 @@
     http://standards.iso.org/iso/19115/-3/cit/2.0 https://schemas.isotc211.org/19115/-3/cit/2.0/cit.xsd 
     http://standards.iso.org/iso/19115/-3/mcc/1.0 https://schemas.isotc211.org/19115/-3/mcc/1.0/mcc.xsd 
     http://standards.iso.org/iso/19115/-3/mrs/1.0 https://schemas.isotc211.org/19115/-3/mrs/1.0/mrs.xsd 
-    http://standards.iso.org/iso/19115/-2/gmi/1.1 https://github.com/ejbleys/schemas/tree/master/19115/-2/gmi/1.1/gmi.xsd 
+    http://standards.iso.org/iso/19115/-2/gmi/1.1 https://raw.githubusercontent.com/ejbleys/schemas/master/19115/-2/gmi/1.1/gmi.xsd 
     http://standards.iso.org/iso/19115/-3/mdq/1.0 https://schemas.isotc211.org/19157/-2/mdq/1.0/mdq.xsd 
     ">
     <sml:IdentifierList>
@@ -78,7 +78,7 @@
                                     <sml:component name="detector">
                                         <sml:PhysicalComponent>
                                             <sml:extension>
-                                                <SD_DetectorArray>
+                                                <smi:SD_DetectorArray>
                                                   <sml:characteristics name="example_chara">
                                                   <sml:CharacteristicList>
                                                   <sml:characteristic name="numberOfDimensions">
@@ -120,71 +120,72 @@
                                                   </gml:Point>
                                                   </gml:position>
                                                   <!-- offsetVectors -->
-                                                  <swe:Vector referenceFrame="EarthFixed">
-                                                  <swe:coordinate name="offset">
-                                                  <swe:Quantity>
-                                                  <swe:uom/>
-                                                  <swe:value>59875</swe:value>
-                                                  </swe:Quantity>
-                                                  </swe:coordinate>
-                                                  </swe:Vector>
+                                                      <swe:Vector referenceFrame="EarthFixed">
+                                                          <swe:coordinate name="offset">
+                                                              <swe:Quantity>
+                                                                  <swe:uom/>
+                                                                  <swe:value>59875</swe:value>
+                                                              </swe:Quantity>
+                                                          </swe:coordinate>
+                                                      </swe:Vector>
                                                   </swe:extension>
                                                   </sml:AbstractSettings>
                                                   </sml:configuration>
-                                                  <arrayDimensions>
-                                                  <swe:DataRecord>
-                                                  <swe:field name="example_field">
-                                                  <swe:Text>
-                                                  <swe:value>This is an example detector</swe:value>
-                                                  </swe:Text>
-                                                  </swe:field>
-                                                  </swe:DataRecord>
-                                                  </arrayDimensions>
-                                                  <detectorShape>
-                                                  <square/>
-                                                  </detectorShape>
-                                                </SD_DetectorArray>
+                                                    <smi:arrayDimensions>
+                                                        <swe:DataRecord>
+                                                            <swe:field name="example_field">
+                                                                <swe:Text>
+                                                                    <swe:value>This is an example detector</swe:value>
+                                                                </swe:Text>
+                                                            </swe:field>
+                                                        </swe:DataRecord>
+                                                    </smi:arrayDimensions>
+                                                  
+                                                  <smi:detectorShape>
+                                                  <smi:square/>
+                                                  </smi:detectorShape>
+                                                </smi:SD_DetectorArray>
                                             </sml:extension>
                                         </sml:PhysicalComponent>
                                     </sml:component>
                                     <sml:component name="systemAndOrientation">
                                         <sml:PhysicalComponent>
                                             <sml:extension>
-                                                <SE_SAROperation>
-                                                  <sml:components>
-                                                  <sml:ComponentList>
-                                                  <sml:component name="grpSAROperation">
-                                                  <sml:PhysicalComponent>
-                                                  <sml:extension>
-                                                  <gml:position>
-                                                  <gml:Point>
-                                                  <gml:description>geolocationGridPointList
-                                                  count="126"</gml:description>
-                                                  <gml:coordinates>-9.938113301744562e+01 2.032876894515828e+01 -9.933794692601427e+01 -2.033676575195040e+01
-                    </gml:coordinates>
-                                                  </gml:Point>
-                                                  </gml:position>
-                                                  </sml:extension>
-                                                  </sml:PhysicalComponent>
-                                                  </sml:component>
-                                                  </sml:ComponentList>
-                                                  </sml:components>
-                                                  <collectionStartTime>2019-07-30T00:40:09.308324</collectionStartTime>
-                                                  <collectionEndTime>2019-07-30T00:40:23.399163</collectionEndTime>
-                                                  <orientation>
-                                                  <!-- This image id at descending orbit. -->
-                                                  <right/>
-                                                  </orientation>
-                                                  <!-- This image is collected using Interferometric Wide Swath method, which is a type of scan method.-->
-                                                  <!-- ref: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/acquisition-modes/interferometric-wide-swath -->
-                                                  <collectionMode>
-                                                  <scan>001</scan>
-                                                  </collectionMode>
-                                                </SE_SAROperation>
-                                                <SD_SensorSystemAndOperation>
-                                                  <collectionStartTime>2019-07-30T00:40:09.308324</collectionStartTime>
-                                                  <collectionEndTime>2019-07-30T00:40:23.399163</collectionEndTime>
-                                                </SD_SensorSystemAndOperation>
+                                                <smi:SE_SAROperation>
+                                                    <sml:components>
+                                                        <sml:ComponentList>
+                                                            <sml:component name="grpSAROperation">
+                                                                <sml:PhysicalComponent>
+                                                                    <sml:extension>
+                                                                        <gml:position>
+                                                                            <gml:Point>
+                                                                                <gml:description>geolocationGridPointList
+                                                                                    count="126"</gml:description>
+                                                                                <gml:coordinates>-9.938113301744562e+01 2.032876894515828e+01 -9.933794692601427e+01 -2.033676575195040e+01
+                                                                                </gml:coordinates>
+                                                                            </gml:Point>
+                                                                        </gml:position>
+                                                                    </sml:extension>
+                                                                </sml:PhysicalComponent>
+                                                            </sml:component>
+                                                        </sml:ComponentList>
+                                                    </sml:components>
+                                                    <smi:collectionStartTime>2019-07-30T00:40:09.308324</smi:collectionStartTime>
+                                                    <smi:collectionEndTime>2019-07-30T00:40:23.399163</smi:collectionEndTime>
+                                                    <smi:orientation>
+                                                        <!-- This image id at descending orbit. -->
+                                                        <smi:right/>
+                                                    </smi:orientation>
+                                                    <!-- This image is collected using Interferometric Wide Swath method, which is a type of scan method.-->
+                                                    <!-- ref: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/acquisition-modes/interferometric-wide-swath -->
+                                                    <smi:collectionMode>
+                                                        <smi:scan>001</smi:scan>
+                                                    </smi:collectionMode>
+                                                </smi:SE_SAROperation>
+                                                <smi:SD_SensorSystemAndOperation>
+                                                  <smi:collectionStartTime>2019-07-30T00:40:09.308324</smi:collectionStartTime>
+                                                  <smi:collectionEndTime>2019-07-30T00:40:23.399163</smi:collectionEndTime>
+                                                </smi:SD_SensorSystemAndOperation>
                                             </sml:extension>
                                         </sml:PhysicalComponent>
                                     </sml:component>
@@ -196,11 +197,11 @@
                                     <!-- This is an 'offset' property of 'SD_PositionAndOrientation class' -->
                                     <sml:AbstractSettings>
                                         <swe:extension>
-                                            <Vector referenceFrame="EarthFixed">
-                                                <coordinate name="offsetVector">
-                                                  <Count/>
-                                                </coordinate>
-                                            </Vector>
+                                            <swe:Vector referenceFrame="EarthFixed">
+                                                <swe:coordinate name="offsetVector">
+                                                  <swe:Count/>
+                                                </swe:coordinate>
+                                            </swe:Vector>
                                         </swe:extension>
                                     </sml:AbstractSettings>
                                 </sml:configuration>
@@ -364,7 +365,7 @@
                         <mrs:referenceSystemIdentifier>
                             <mcc:MD_Identifier>
                                 <mcc:code>
-                                    <MD_PixelOrientationCode>center</MD_PixelOrientationCode>
+                                    <msr:MD_PixelOrientationCode>center</msr:MD_PixelOrientationCode>
                                 </mcc:code>
                             </mcc:MD_Identifier>
                         </mrs:referenceSystemIdentifier>

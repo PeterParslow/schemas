@@ -13,7 +13,7 @@
     <import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/xml.xsd"/>
     <import namespace="http://standards.iso.org/iso/19115/-2/gmi/1.1"
-        schemaLocation="https://github.com/ejbleys/schemas/tree/master/19115/-2/gmi/1.1/gmi.xsd"/>
+        schemaLocation="https://raw.githubusercontent.com/ejbleys/schemas/master/19115/-2/gmi/1.1/gmi.xsd"/>
 
     <include schemaLocation="./physicalSensorModel.xsd"/>
     <include schemaLocation="./nonPhysicalSensorModel.xsd"/>
