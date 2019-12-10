@@ -367,7 +367,7 @@
                         <mrs:referenceSystemIdentifier>
                             <mcc:MD_Identifier>
                                 <mcc:code>
-                                    <msr:MD_PixelOrientationCode>centre</msr:MD_PixelOrientationCode>
+                                    <msr:MD_PixelOrientationCode>center</msr:MD_PixelOrientationCode>
                                 </mcc:code>
                             </mcc:MD_Identifier>
                         </mrs:referenceSystemIdentifier>
