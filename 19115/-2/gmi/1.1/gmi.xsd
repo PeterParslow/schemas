@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified"
+	targetNamespace="http://standards.iso.org/iso/19115/-2/gmi/1.1"
+	xmlns:gmi="http://standards.iso.org/iso/19115/-2/gmi/1.1"
+	xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" 
+	xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+	xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+	xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+	xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	version="1.0">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation>This file was created by Ted Habermann during May 2015 to correct
+			omissions (gmx, MI_EnvironmentalRecord) in existing gmi schema ======
+		</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/mcc/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mcc/1.0/mcc.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/cit/1.0/cit.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/mrs/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mrs/1.0/mrs.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/gex/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/gex/1.0/gex.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/gco/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/gco/1.0/gco.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19157/-2/mdq/1.0" schemaLocation="https://schemas.isotc211.org/19157/-2/mdq/1.0/mdq.xsd"/>
+	<xs:include schemaLocation="metadataEntitySet.xsd"/>
+	<xs:include schemaLocation="contentInformation.xsd"/>
+	<xs:include schemaLocation="dataQualityInformation.xsd"/>
+	<xs:include schemaLocation="spatialRepresentationInformation.xsd"/>
+</xs:schema>
