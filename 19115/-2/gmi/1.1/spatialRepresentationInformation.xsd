@@ -23,12 +23,12 @@
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/mdb/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mdb/1.0/mdb.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/mcc/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mcc/1.0/mcc.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/cit/1.0/cit.xsd"/>
-	<xs:import namespace="http://standards.iso.org/iso/19115/-3/msr/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mrs/1.0/msr.xsd"/>
+	<xs:import namespace="http://standards.iso.org/iso/19115/-3/msr/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/msr/1.0/msr.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/mrs/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/mrs/1.0/mrs.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/gex/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/gex/1.0/gex.xsd"/>
 	<xs:import namespace="http://standards.iso.org/iso/19115/-3/gco/1.0" schemaLocation="https://schemas.isotc211.org/19115/-3/gco/1.0/gco.xsd"/>
 	<xs:import namespace="http://www.opengis.net/gml/3.2"
-		schemaLocation="http://www.opengis.net/gml/3.2"/>
+		schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<xs:include schemaLocation="acquisitionInformation.xsd"/>
 	<!-- ########################################################################### -->
 	<!-- ########################################################################### -->
