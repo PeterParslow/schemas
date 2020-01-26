@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema"
   xmlns:cit="https://schemas.isotc211.org/19115/-3/cit/1.0"
-  xmlns:dqc="https://schemas.isotc211.org/19157/-2/dqc/1.1"
+  xmlns:dqc="https://schemas.isotc211.org/19157/-2/dqc/1.0"
   xmlns:mrc="https://schemas.isotc211.org/19115/-3/mrc/1.0"
   xmlns:mrd="https://schemas.isotc211.org/19115/-1/mrd/3.0" elementFormDefault="qualified"
-  targetNamespace="https://schemas.isotc211.org/19157/-2/dqc/1.1" version="1.0">
+  targetNamespace="https://schemas.isotc211.org/19157/-2/dqc/1.0" version="1.0">
   <include schemaLocation="abstract.xsd"/>
   <!--  <import namespace="https://schemas.isotc211.org/19115/-3/cit/1.0" schemaLocation="../../../../19115/-3/cit/1.0/cit.xsd"/>
   <import namespace="https://schemas.isotc211.org/19115/-3/mrc/1.0" schemaLocation="../../../../19115/-3/mrc/1.0/mrc.xsd"/>

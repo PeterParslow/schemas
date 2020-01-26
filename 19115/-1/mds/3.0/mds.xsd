@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.0" xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/3.0" xmlns:mac="https://schemas.isotc211.org/19115/-2/mac/1.0" xmlns:mas="https://schemas.isotc211.org/19115/-1/mas/1.0" xmlns:mco="https://schemas.isotc211.org/19115/-1/mco/3.0" xmlns:mdb="https://schemas.isotc211.org/19115/-1/mdb/1.0" xmlns:mdq="https://schemas.isotc211.org/19157/-2/mdq/1.1" xmlns:mds="https://schemas.isotc211.org/19115/-1/mds/3.0" xmlns:mmi="https://schemas.isotc211.org/19115/-1/mmi/1.0" xmlns:mpc="https://schemas.isotc211.org/19115/-1/mpc/1.0" xmlns:mrc="https://schemas.isotc211.org/19115/-2/mrc/1.0" xmlns:mrd="https://schemas.isotc211.org/19115/-1/mrd/3.0" xmlns:mrl="https://schemas.isotc211.org/19115/-2/mrl/1.0" xmlns:mrs="https://schemas.isotc211.org/19115/-1/mrs/3.0" xmlns:msr="https://schemas.isotc211.org/19115/-2/msr/1.0" xmlns:srv="https://schemas.isotc211.org/19115/-1/srv/3.0" elementFormDefault="qualified" targetNamespace="https://schemas.isotc211.org/19115/-1/mds/3.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+  xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.0" 
+  xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/3.0" 
+  xmlns:mac="https://schemas.isotc211.org/19115/-2/mac/1.0" 
+  xmlns:mas="https://schemas.isotc211.org/19115/-1/mas/1.0" 
+  xmlns:mco="https://schemas.isotc211.org/19115/-1/mco/3.0" 
+  xmlns:mdb="https://schemas.isotc211.org/19115/-1/mdb/1.0" 
+  xmlns:mdq="https://schemas.isotc211.org/19157/-2/mdq/1.1" 
+  xmlns:mds="https://schemas.isotc211.org/19115/-1/mds/3.0" 
+  xmlns:mmi="https://schemas.isotc211.org/19115/-1/mmi/1.0" 
+  xmlns:mpc="https://schemas.isotc211.org/19115/-1/mpc/1.0" 
+  xmlns:mrc="https://schemas.isotc211.org/19115/-2/mrc/1.0" 
+  xmlns:mrd="https://schemas.isotc211.org/19115/-1/mrd/3.0" 
+  xmlns:mrl="https://schemas.isotc211.org/19115/-2/mrl/1.0" 
+  xmlns:mrs="https://schemas.isotc211.org/19115/-1/mrs/3.0" 
+  xmlns:msr="https://schemas.isotc211.org/19115/-2/msr/1.0" 
+  xmlns:srv="https://schemas.isotc211.org/19115/-1/srv/3.0" 
+  elementFormDefault="qualified" 
+  targetNamespace="https://schemas.isotc211.org/19115/-1/mds/3.0" 
+  version="1.0">
   <annotation>
     <documentation>Namespace &lt;font color="#1f497d"&gt;that imports all necessary namespaces to implement a complete metadata record for a dataset or service, not including extended data types or user-defined extensions. &lt;/font&gt;Wrapper namespace to support Catalog Service implementations.</documentation>
   </annotation>
