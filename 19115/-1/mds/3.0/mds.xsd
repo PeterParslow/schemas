@@ -15,7 +15,7 @@
   xmlns:mrd="https://schemas.isotc211.org/19115/-1/mrd/3.0" 
   xmlns:mrl="https://schemas.isotc211.org/19115/-2/mrl/1.0" 
   xmlns:mrs="https://schemas.isotc211.org/19115/-1/mrs/3.0" 
-  xmlns:msr="https://schemas.isotc211.org/19115/-2/msr/1.0" 
+  xmlns:msr="https://schemas.isotc211.org/19115/-1/msr/3.0" 
   xmlns:srv="https://schemas.isotc211.org/19115/-1/srv/3.0" 
   elementFormDefault="qualified" 
   targetNamespace="https://schemas.isotc211.org/19115/-1/mds/3.0" 
@@ -37,7 +37,7 @@
   <import namespace="https://schemas.isotc211.org/19115/-1/mrd/3.0" schemaLocation="../../../../19115/-1/mrd/3.0/mrd.xsd"/>
   <import namespace="https://schemas.isotc211.org/19115/-2/mrl/2.0" schemaLocation="../../../../19115/-2/mrl/2.0/mrl.xsd"/>
   <import namespace="https://schemas.isotc211.org/19115/-1/mrs/3.0" schemaLocation="../../../../19115/-1/mrs/3.0/mrs.xsd"/>
-  <import namespace="https://schemas.isotc211.org/19115/-2/msr/2.0" schemaLocation="../../../../19115/-2/msr/2.0/msr.xsd"/>
+  <import namespace="https://schemas.isotc211.org/19115/-1/msr/3.0" schemaLocation="../../../../19115/-1/msr/3.0/msr.xsd"/>
   <import namespace="https://schemas.isotc211.org/19115/-1/srv/3.0" schemaLocation="../../../../19115/-1/srv/3.0/srv.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 </schema>
