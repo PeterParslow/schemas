@@ -2,7 +2,8 @@
   xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.0" 
   xmlns:gmw="https://schemas.isotc211.org/19103/-/gmw/1.0" 
   xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/3.0" 
-  xmlns:msr="https://schemas.isotc211.org/19115/-2/msr/2.0" elementFormDefault="qualified" targetNamespace="https://schemas.isotc211.org/19115/-2/msr/2.0" version="1.0">
+  xmlns:msr="https://schemas.isotc211.org/19115/-1/msr/3.0" 
+  elementFormDefault="qualified" targetNamespace="https://schemas.isotc211.org/19115/-1/msr/3.0" version="1.0">
   <annotation>
     <documentation>Frequency with which modifications and deletions are made to the data after it is first produced</documentation>
   </annotation>
