@@ -385,8 +385,8 @@
 								in the applicable technical standard.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="alternativeName" type="gco:CharacterString_PropertyType"
-						minOccurs="1" maxOccurs="1">
+					<xs:element name="alternativeName" type="gco:RE_AlternativeName_PropertyType"
+						minOccurs="0" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation>The attribute "alternativeNames" contains a set of
 								instances of RE_AlternativeName, each of which is a translation of
